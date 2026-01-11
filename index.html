@@ -120,4 +120,26 @@
   window.addEventListener('load', function () {
     domReady = true
     hideLoading()
-  }, false);</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-YCWZ8ZDCH2"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-YCWZ8ZDCH2")</script></body></html>
+  }</script><script>
+  (function () {
+    const allowedDomains = [
+      "bulofkgames.blogspot.com",
+      "thebulofkproject.blogspot.com",
+      "github.io"
+    ];
+
+    const OFFICIAL_SITE = "https://bulofkgames.blogspot.com/";
+    const ref = document.referrer.toLowerCase();
+
+    if (!ref) return;
+
+    const allowed = allowedDomains.some(domain => ref.includes(domain));
+
+    if (!allowed) {
+      window.location.replace(OFFICIAL_SITE);
+    }
+  })();
+  </script>
+
+</body>
+</html>
